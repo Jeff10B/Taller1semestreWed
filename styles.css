@@ -54,9 +54,111 @@
 
 @media (max-width: 768px) {
     .cuadros {
-        flex-direction: column;   /* uno debajo del otro en celular */
+        flex-direction: column;   
     }
     .cuadro img {
         height: 200px;
     }
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h3 {
+    margin: 0 0 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #0d3d3d;      
+}
+
+.info p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;   
+}
+
+.formulario button {
+    align-self: flex-start;   
+    padding: 10px 25px;       
+    background-color: #0d3d3d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #145a5a;
+}
+
+
+/* Título encima de la tabla */
+.titulo-tabla {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: #0d3d3d;
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+/* Tabla */
+.tabla {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+
+.tabla th,
+.tabla td {
+    border: 2px solid ;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* Encabezado */
+.tabla thead th {
+    background-color: #285252;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* Filas alternas */
+.tabla tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover */
+.tabla tbody tr:hover {
+    background-color: #e8f4f4;
+    transition: background 0.2s;
+}
+
+
+.footer {
+    background-color: #0d3d3d;
+    color: #ffffff;
+    text-align: center;      
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
 }
